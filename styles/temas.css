@@ -1,0 +1,44 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;    
+}
+
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+    position: fixed;
+    padding: 5px;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: rgba(1, 1, 1, .2);    
+}
+
+.navbar .logo p{
+    display: inline-block;
+    font-size: 28px;
+    color: #264653;
+}
+
+.navbar .logo .concept{
+    font-size: 30px;
+    font-weight: 600;
+}
+
+.navbar .pages a{
+    margin: 10px;
+    color: #e9c46a;
+    font-weight: 600;
+    font-size: 18px;
+}
+
+.navbar .pages a:hover{
+    border-bottom: solid 2px #e9c46a;
+}
+
+a{
+    text-decoration: none;
+}
