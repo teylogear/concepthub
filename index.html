@@ -3,55 +3,49 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>concepthub</title>
     <link rel="stylesheet" href="./styles/index.css">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,600;1,300;1,400;1,600&display=swap" rel="stylesheet"> 
 
 </head>
 <body>
 
-    <!-- navegacion -->
-
-    <nav class="navbar">
-        <div class="logo">
-            <a href="./index.html">
-                <p class="concept">concept</p>
-                <p class="hub">hub</p>            
-            </a>
-        </div>
-        <div class="pages">
-            <a href="./index.html">Inicio</a>
-            <a href="./temario.html">Temas</a>
-            <a href="./about.html">Acerca de</a>
-        </div>
-    </nav>
-
     <!-- landing -->
     <div class="landing">
-        <img src="https://images.unsplash.com/3/doctype-hi-res.jpg?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=746&q=80" alt="">
-        <div class="text">
+        <nav class="navbar">
+            <a class="logo" href="./index.html">concepthub</a>
+            <ul>
+                <li><a href="./index.html">Inicio</a></li>
+                <li><a href="./temario.html">Temas</a></li>
+                <li><a href="./about.html">Acerca de</a></li>
+            </ul>
+        </nav>
+        <div class="content">
             <p>Inicia en el mundo del desarrollo de software aprendiendo las bases de la programación de forma simple</p>
-            <a href="./temario.html">Empezar</a>
-        </div>        
+            <div class="boton">
+                <a href="./temario.html">Empezar</a>
+            </div>
+        </div>
     </div>
 
+    
     <!-- seccion 2 -->
     <div class="seccion2">
         <div class="text">
-            <h3>Desarrollo de software</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia ut totam impedit voluptas sunt, recusandae at odio iusto debitis doloribus.</p>
+            <h3>Conceptos </h3>
+            <p>Todos los lenguajes de programación hacen uso de estos conceptos, una vez que los tengas podrás aprender cualquier lenguaje de programación sin problemas.</p>
         </div>
         <div class="text">
-            <h3>Desarrollo web</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia ut totam impedit voluptas sunt, recusandae at odio iusto debitis doloribus.</p>
+            <h3>Programación </h3>
+            <p>Para programar necesitas aprender un lenguaje de programación, este sitio web no se enfoca a ningún lenguaje de programación en específico, solo te proporciona los conceptos básicos.</p>
         </div>
         <div class="text">
-            <h3>Apliciones web</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia ut totam impedit voluptas sunt, recusandae at odio iusto debitis doloribus.</p>
+            <h3>Ejemplos </h3>
+            <p>Encontraras algunos ejemplos de cómo se usarían estos conceptos en algunos de los lenguajes más populares de programación, para que puedas ver que es muy similar y la importancia de aprender estos conceptos con solides.</p>
         </div>
         <div class="text">
             <h3>Futuro</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia ut totam impedit voluptas sunt, recusandae at odio iusto debitis doloribus.</p>
+            <p>El mundo del desarrollo está lleno de posibilidades y en el futuro solo incrementaran. Puedes dar el primer paso hacia ese futuro empezando con las bases.</p>
         </div>
     </div>
 
@@ -65,5 +59,11 @@
             <iframe  src="https://www.youtube.com/embed/X5Wkp1gsNik" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
         </div>
     </div>
+    <script type="text/javascript">
+    window.addEventListener("scroll",function(){
+        var navbar = document.querySelector("nav");
+        navbar.classList.toggle("sticky", window.scrollY > 0);
+    })
+    </script>
 </body>
 </html>

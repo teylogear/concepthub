@@ -3,25 +3,480 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="./styles/index.css">
+    <title>Temario</title>
+    <link rel="stylesheet" href="./styles/temas.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" />
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,600;1,300;1,400;1,600&display=swap" rel="stylesheet">
 </head>
 <body>
-    <!-- navegacion -->
 
+    <!-- navegacion -->
     <nav class="navbar">
-        <div class="logo">
-            <a href="./index.html">
-                <p class="concept">concept</p>
-                <p class="hub">hub</p>            
-            </a>
-        </div>
-        <div class="pages">
-            <a href="./index.html">Inicio</a>
-            <a href="./temario.html">Temas</a>
-            <a href="./about.html">Acerca de</a>
-        </div>
+        <a class="logo" href="./index.html">concepthub</a>
+        <ul>
+            <li><a href="./index.html">Inicio</a></li>
+            <li><a href="./temario.html">Temas</a></li>
+            <li><a href="./about.html">Acerca de</a></li>
+        </ul>
     </nav>
+
+    <!-- reproductor -->
+    <div class="music">
+        <p>Disfruta de la radio que muchos programadores oyen</p>
+        <audio src="https://coderadio-admin.freecodecamp.org/radio/8010/radio.mp3" controls></audio>               
+    </div>
+
+    <div class="instrucciones">
+        <p>Los conceptos están agrupados y acomodados en bloques de manera que puedas ir aprendiéndolos de manera progresiva y en orden. Puedes acceder haciendo clic en las pestañas para desplegarlos. </p>
+    </div>
+
+    <!-- contenedor -->
+    <div class="container">
+        <!-- pestañas -->
+        <div class="btn-container">
+            <button class="tab-btn active" data-id="fundamentos">Fundamentos</button>
+            <button class="tab-btn" data-id="control">Control de flujo</button>
+            <button class="tab-btn" data-id="arreglos">Arreglos</button>
+            <button class="tab-btn" data-id="funciones">Funciones</button>
+        </div>            
+        <!-- contenido -->
+        <div class="sec-container">
+
+            <!-- fundamentos -->
+            <div class="content active" id="fundamentos">     
+                
+                
+                <!-- temas -->
+                <div class="entrys">
+
+
+                    <!-- tema -->
+                    <div class="entry">
+                        <!-- titulo de entrada -->
+                        <div class="entry-title">
+                            <p>Variables</p>
+                            <button type="button" class="entry-btn">
+                                <span class="icon">
+                                    <i class="fas fa-angle-right"></i>
+                                </span>
+                            </button>
+                        </div>
+                        <!-- texto de entrada -->
+                        <div class="entry-text">
+                            <p>Las variables son pequeños contenedores que nos permiten almacenar información temporalmente y después poder trabajar con esa información para hacer lo que necesitemos. Las variables pueden cambiar su valor durante la ejecución de un programa. <br><br>
+                            Para nombrar las variables utilizaremos identificadores que nos sirven para llamar a la variable cuando queremos trabajar con ella. Un identificador es el nombre que le queremos poner a una variable y puede ser el que sea, pero es preferible que sea descriptivo de lo que contiene. <br><br>
+                            Existen tipos de variables de acuerdo a su tipo de dato, y pueden ser: <br><br>
+                            Enteros: 5   -45   2541 <br><br>
+                            Los enteros son números que pueden estar precedidos del signo + o -, y que no tie¬nen parte decimal. <br><br><br>
+                            Reales: 34.31   0.8776   -76.6542 <br><br>
+                            Los reales son números que pueden estar precedidos del signo + o -, y que tienen una parte decimal. <br><br><br>
+                            Ca¬racteres: ‘a’   ‘$’   ‘-’   ‘?’ <br><br>
+                            Un dato tipo caracter contiene un solo caracter, y se escribe entre apostrofes, aunque este tipo de datos pueden contener números, no pueden ser utilizados para realizar operaciones aritméticas. <br><br><br>
+                            Cadena de caracateres:  “carlos”   “edificio”   “ 345-54-12” <br><br>
+                            Un dato tipo cadena de caracteres contiene un conjunto de caracteres, y se es¬cribe entre comillas. <br><br><br>
+                            Booleanos: true   false <br><br>
+                            Un dato booleano solo puede ser verdadero (true) o falso (false) <br><br><br>
+
+                            <span>Ejemplos de variables:</span> <br><br>
+
+                            Numero = 3 <br><br>
+                            Nombre = “carlos” <br><br>
+                            Peso = 58.3 <br><br>
+                            Empleado = true <br><br>
+
+                            Esta es solo una forma de visualizar la declaracion de variables, pero es parecida a la de casi todos los lenguajes de programacion.
+
+                            </p>
+                            
+                        </div>
+                    </div>
+                    <!-- fin del tema -->   
+
+
+                    <!-- tema -->
+                    <div class="entry">
+                        <!-- titulo de entrada -->
+                        <div class="entry-title">
+                            <p>Constantes</p>
+                            <button type="button" class="entry-btn">
+                                <span class="icon">
+                                    <i class="fas fa-angle-right"></i>
+                                </span>
+                            </button>
+                        </div>
+                        <!-- texto de entrada -->
+                        <div class="entry-text">
+                            <p>Las constantes son datos que no cambian durante la ejecución de un programa. <br><br><br>
+                                Al igual que las variables para nombrar las constantes utilizamos identificadores. Existen tipos de constantes como tipos de datos, por lo tanto, puede haber constantes de tipo entero, real, caracter, cadena de caracteres, etc. Es muy importante que los nombres de las constantes igual que las variables sean representativas de la función que tienen las mismas en el programa. <br><br><br>
+                                Dependiendo del lenguaje de programación, la declaración de variables puede variar bastante, pero en todos tienen el mismo funcionamiento.
+                                </p>
+                        </div>
+                    </div>
+                    <!-- fin del tema -->     
+                    
+                    
+                    <!-- tema -->
+                    <div class="entry">
+                        <!-- titulo de entrada -->
+                        <div class="entry-title">
+                            <p>Operadores aritmeticos</p>
+                            <button type="button" class="entry-btn">
+                                <span class="icon">
+                                    <i class="fas fa-angle-right"></i>
+                                </span>
+                            </button>
+                        </div>
+                        <!-- texto de entrada -->
+                        <div class="entry-text">
+                            <p> Son los que nos permiten realizar operaciones en nuestros programas, por ejemplo: <br><br><br>
+                                + suma <br><br>
+                                - resta <br><br>
+                                * multiplicación <br><br>
+                                / divición <br><br><br>
+                                
+                                Ejemplo de operaciones con estos operadores: <br><br><br>
+                                Numero1 = 10 <br><br>
+                                Numero2 = 5 <br><br>
+                                Resultado = numero1 + numero2 <br><br><br>
+                                Ahora la variable resultado almacena un 15 ya que 10 + 5 =15. <br><br>
+                                El orden en el que ponemos nuestras variables es importante, esto se representa mejor en la resta <br><br><br>
+                                Numero1 = 10 <br><br>
+                                Numero2 = 5 <br><br>
+                                Resultado = numero1 - numero2 <br><br><br>
+                                Ahora la variable resultado almacena un 5 ya que 10 - 5 = 5. <br><br>
+                                Pero en el caso inverso <br><br>   
+                                Numero1 = 10 <br><br>
+                                Numero2 = 5 <br><br>
+                                Resultado = numero2 - numero1 <br><br><br>
+                                Ahora la variable resultado almacena un -5 ya que 5 - 10 = -5. <br><br><br>
+                                Para la suma y la multiplicaion el orden no es importante pero para la resta y la divicion debemos tener cuidado con el orden. <br><br><br>
+                                Solo podemos hacer operaciones aritmeticas con variables de tipo entero y reales. <br><br>
+                                </p>
+                        </div>
+                    </div>
+                    <!-- fin del tema -->    
+                    
+                    
+                    <!-- tema -->
+                    <div class="entry">
+                        <!-- titulo de entrada -->
+                        <div class="entry-title">
+                            <p>Operadores asignación</p>
+                            <button type="button" class="entry-btn">
+                                <span class="icon">
+                                    <i class="fas fa-angle-right"></i>
+                                </span>
+                            </button>
+                        </div>
+                        <!-- texto de entrada -->
+                        <div class="entry-text">
+                            <p>Sirven para dar valor a las variables <br><br><br>
+                                = igual <br><br>
+                                += mas igual <br><br>
+                                -= menos igual <br><br>
+                                *= multiplicación igual <br><br>
+                                /= división igual <br><br><br>
+                                El signo = es muy simple, lo usamos para iniciar una variable con el valor que deseemos, por ejemplo: <br><br><br>
+                                Variable = “valor” <br><br>
+                                Variable = false <br><br>
+                                Variable = 13.3 <br><br><br>
+                                El signo += significa que agregaremos un valor al que ya posee nuestra variable de esta forma <br><br><br>
+                                numero1 = 3 <br><br>
+                                numero2 = 6 <br><br>
+                                numero1 += numero2 <br><br>
+                                Es lo mismo que <br><br>
+                                numero1 = 3 <br><br>
+                                numero2 = 6 <br><br>
+                                numero1 = numero1 + numero2 <br><br><br>
+                                Los demás signos funcionan de manera similar haciendo las funciones correspondientes de resta, multiplicación y división <br><br><br>
+                                Cabe señalar que no debe haber espacios entre los signos. += funcionará pero + = no funcionará <br><br>
+                                </p>
+                        </div>
+                    </div>
+                    <!-- fin del tema -->     
+                    
+                </div>
+                <!-- fin de temas -->
+
+
+            </div>
+            <!-- fin fundamentos -->
+
+
+            <!-- control -->
+            <div class="content" id="control">                
+                
+                <!-- temas -->
+                <div class="entrys">
+
+
+                    <!-- tema -->
+                    <div class="entry">
+                        <!-- titulo de entrada -->
+                        <div class="entry-title">
+                            <p>Sentencia if</p>
+                            <button type="button" class="entry-btn">
+                                <span class="icon">
+                                    <i class="fas fa-angle-right"></i>
+                                </span>
+                            </button>
+                        </div>
+                        <!-- texto de entrada -->
+                        <div class="entry-text">
+                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Necessitatibus et ipsa repellaborum, eligendi dignissimos quam porro repellendus iste velit a aspernatur. Consequuntur oditneque reprehenderit sapiente amet perferendis.</p><br><br>
+                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Necessitatibus et ipsa repellaborum, eligendi dignissimos quam porro repellendus iste velit a aspernatur. Consequuntur oditneque reprehenderit sapiente amet perferendis.</p><br><br>
+                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Necessitatibus et ipsa repellaborum, eligendi dignissimos quam porro repellendus iste velit a aspernatur. Consequuntur oditneque reprehenderit sapiente amet perferendis.</p><br><br>
+                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Necessitatibus et ipsa repellaborum, eligendi dignissimos quam porro repellendus iste velit a aspernatur. Consequuntur oditneque reprehenderit sapiente amet perferendis.</p><br><br>
+                        </div>
+                    </div>
+                    <!-- fin del tema -->   
+
+
+                    <!-- tema -->
+                    <div class="entry">
+                        <!-- titulo de entrada -->
+                        <div class="entry-title">
+                            <p>Sentencia if else</p>
+                            <button type="button" class="entry-btn">
+                                <span class="icon">
+                                    <i class="fas fa-angle-right"></i>
+                                </span>
+                            </button>
+                        </div>
+                        <!-- texto de entrada -->
+                        <div class="entry-text">
+                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Necessitatibus et ipsa repellaborum, eligendi dignissimos quam porro repellendus iste velit a aspernatur. Consequuntur oditneque reprehenderit sapiente amet perferendis.</p><br><br>
+                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Necessitatibus et ipsa repellaborum, eligendi dignissimos quam porro repellendus iste velit a aspernatur. Consequuntur oditneque reprehenderit sapiente amet perferendis.</p><br><br>
+                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Necessitatibus et ipsa repellaborum, eligendi dignissimos quam porro repellendus iste velit a aspernatur. Consequuntur oditneque reprehenderit sapiente amet perferendis.</p><br><br>
+                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Necessitatibus et ipsa repellaborum, eligendi dignissimos quam porro repellendus iste velit a aspernatur. Consequuntur oditneque reprehenderit sapiente amet perferendis.</p><br><br>
+                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Necessitatibus et ipsa repellaborum, eligendi dignissimos quam porro repellendus iste velit a aspernatur. Consequuntur oditneque reprehenderit sapiente amet perferendis.</p><br><br>
+                        </div>
+                    </div>
+                    <!-- fin del tema -->     
+                    
+                    
+                    <!-- tema -->
+                    <div class="entry">
+                        <!-- titulo de entrada -->
+                        <div class="entry-title">
+                            <p>Operadores de condición</p>
+                            <button type="button" class="entry-btn">
+                                <span class="icon">
+                                    <i class="fas fa-angle-right"></i>
+                                </span>
+                            </button>
+                        </div>
+                        <!-- texto de entrada -->
+                        <div class="entry-text">
+                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Necessitatibus et ipsa repellaborum, eligendi dignissimos quam porro repellendus iste velit a aspernatur. Consequuntur oditneque reprehenderit sapiente amet perferendis.</p><br><br>
+                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Necessitatibus et ipsa repellaborum, eligendi dignissimos quam porro repellendus iste velit a aspernatur. Consequuntur oditneque reprehenderit sapiente amet perferendis.</p><br><br>
+                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Necessitatibus et ipsa repellaborum, eligendi dignissimos quam porro repellendus iste velit a aspernatur. Consequuntur oditneque reprehenderit sapiente amet perferendis.</p><br><br>
+                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Necessitatibus et ipsa repellaborum, eligendi dignissimos quam porro repellendus iste velit a aspernatur. Consequuntur oditneque reprehenderit sapiente amet perferendis.</p><br><br>
+                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Necessitatibus et ipsa repellaborum, eligendi dignissimos quam porro repellendus iste velit a aspernatur. Consequuntur oditneque reprehenderit sapiente amet perferendis.</p><br><br>
+                        </div>
+                    </div>
+                    <!-- fin del tema -->    
+                    
+                    
+                    <!-- tema -->
+                    <div class="entry">
+                        <!-- titulo de entrada -->
+                        <div class="entry-title">
+                            <p>Operadores de condición</p>
+                            <button type="button" class="entry-btn">
+                                <span class="icon">
+                                    <i class="fas fa-angle-right"></i>
+                                </span>
+                            </button>
+                        </div>
+                        <!-- texto de entrada -->
+                        <div class="entry-text">
+                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Necessitatibus et ipsa repellaborum, eligendi dignissimos quam porro repellendus iste velit a aspernatur. Consequuntur oditneque reprehenderit sapiente amet perferendis.</p><br><br>
+                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Necessitatibus et ipsa repellaborum, eligendi dignissimos quam porro repellendus iste velit a aspernatur. Consequuntur oditneque reprehenderit sapiente amet perferendis.</p><br><br>
+                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Necessitatibus et ipsa repellaborum, eligendi dignissimos quam porro repellendus iste velit a aspernatur. Consequuntur oditneque reprehenderit sapiente amet perferendis.</p><br><br>
+                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Necessitatibus et ipsa repellaborum, eligendi dignissimos quam porro repellendus iste velit a aspernatur. Consequuntur oditneque reprehenderit sapiente amet perferendis.</p><br><br>
+                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Necessitatibus et ipsa repellaborum, eligendi dignissimos quam porro repellendus iste velit a aspernatur. Consequuntur oditneque reprehenderit sapiente amet perferendis.</p><br><br>
+                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Necessitatibus et ipsa repellaborum, eligendi dignissimos quam porro repellendus iste velit a aspernatur. Consequuntur oditneque reprehenderit sapiente amet perferendis.</p><br><br>
+                        </div>
+                    </div>
+                    <!-- fin del tema -->    
+                    
+                    
+                    <!-- tema -->
+                    <div class="entry">
+                        <!-- titulo de entrada -->
+                        <div class="entry-title">
+                            <p>Operadores de condición</p>
+                            <button type="button" class="entry-btn">
+                                <span class="icon">
+                                    <i class="fas fa-angle-right"></i>
+                                </span>
+                            </button>
+                        </div>
+                        <!-- texto de entrada -->
+                        <div class="entry-text">
+                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Necessitatibus et ipsa repellaborum, eligendi dignissimos quam porro repellendus iste velit a aspernatur. Consequuntur oditneque reprehenderit sapiente amet perferendis.</p><br><br>
+                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Necessitatibus et ipsa repellaborum, eligendi dignissimos quam porro repellendus iste velit a aspernatur. Consequuntur oditneque reprehenderit sapiente amet perferendis.</p><br><br>
+                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Necessitatibus et ipsa repellaborum, eligendi dignissimos quam porro repellendus iste velit a aspernatur. Consequuntur oditneque reprehenderit sapiente amet perferendis.</p><br><br>
+                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Necessitatibus et ipsa repellaborum, eligendi dignissimos quam porro repellendus iste velit a aspernatur. Consequuntur oditneque reprehenderit sapiente amet perferendis.</p><br><br>
+                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Necessitatibus et ipsa repellaborum, eligendi dignissimos quam porro repellendus iste velit a aspernatur. Consequuntur oditneque reprehenderit sapiente amet perferendis.</p><br><br>
+                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Necessitatibus et ipsa repellaborum, eligendi dignissimos quam porro repellendus iste velit a aspernatur. Consequuntur oditneque reprehenderit sapiente amet perferendis.</p><br><br>
+                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Necessitatibus et ipsa repellaborum, eligendi dignissimos quam porro repellendus iste velit a aspernatur. Consequuntur oditneque reprehenderit sapiente amet perferendis.</p><br><br>
+                        </div>
+                    </div>
+                    <!-- fin del tema -->    
+                    
+                </div>
+                <!-- fin de temas -->
+            </div>
+            <!-- fin control -->
+
+
+            <!-- arreglos -->
+            <div class="content" id="arreglos">
+
+
+                <!-- temas -->
+                <div class="entrys">
+                    <!-- tema -->
+                    <div class="entry">
+                        <!-- titulo de entrada -->
+                        <div class="entry-title">
+                            <p>Arreglos</p>
+                            <button type="button" class="entry-btn">
+                                <span class="icon">
+                                    <i class="fas fa-angle-right"></i>
+                                </span>
+                            </button>
+                        </div>
+                        <!-- texto de entrada -->
+                        <div class="entry-text">
+                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Necessitatibus et ipsa repellat laborum, eligendi dignissimos quam porro repellendus iste velit a aspernatur. Consequuntur odit ab neque reprehenderit sapiente amet perferendis.</p><br><br>
+                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Necessitatibus et ipsa repellat laborum, eligendi dignissimos quam porro repellendus iste velit a aspernatur. Consequuntur odit ab neque reprehenderit sapiente amet perferendis.</p><br><br>
+                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Necessitatibus et ipsa repellat laborum, eligendi dignissimos quam porro repellendus iste velit a aspernatur. Consequuntur odit ab neque reprehenderit sapiente amet perferendis.</p><br><br>
+                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Necessitatibus et ipsa repellat laborum, eligendi dignissimos quam porro repellendus iste velit a aspernatur. Consequuntur odit ab neque reprehenderit sapiente amet perferendis.</p><br><br>
+                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Necessitatibus et ipsa repellat laborum, eligendi dignissimos quam porro repellendus iste velit a aspernatur. Consequuntur odit ab neque reprehenderit sapiente amet perferendis.</p><br><br>
+                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Necessitatibus et ipsa repellat laborum, eligendi dignissimos quam porro repellendus iste velit a aspernatur. Consequuntur odit ab neque reprehenderit sapiente amet perferendis.</p><br><br>
+                        </div>
+                    </div>
+                    <!-- fin del tema -->    
+                    
+                    
+                    <!-- tema -->
+                    <div class="entry">
+                        <!-- titulo de entrada -->
+                        <div class="entry-title">
+                            <p>Matrices</p>
+                            <button type="button" class="entry-btn">
+                                <span class="icon">
+                                    <i class="fas fa-angle-right"></i>
+                                </span>
+                            </button>
+                        </div>
+                        <!-- texto de entrada -->
+                        <div class="entry-text">
+                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Necessitatibus et ipsa repellat laborum, eligendi dignissimos quam porro repellendus iste velit a aspernatur. Consequuntur odit ab neque reprehenderit sapiente amet perferendis.</p><br><br>
+                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Necessitatibus et ipsa repellat laborum, eligendi dignissimos quam porro repellendus iste velit a aspernatur. Consequuntur odit ab neque reprehenderit sapiente amet perferendis.</p><br><br>
+                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Necessitatibus et ipsa repellat laborum, eligendi dignissimos quam porro repellendus iste velit a aspernatur. Consequuntur odit ab neque reprehenderit sapiente amet perferendis.</p><br><br>
+                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Necessitatibus et ipsa repellat laborum, eligendi dignissimos quam porro repellendus iste velit a aspernatur. Consequuntur odit ab neque reprehenderit sapiente amet perferendis.</p><br><br>
+                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Necessitatibus et ipsa repellat laborum, eligendi dignissimos quam porro repellendus iste velit a aspernatur. Consequuntur odit ab neque reprehenderit sapiente amet perferendis.</p><br><br>
+                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Necessitatibus et ipsa repellat laborum, eligendi dignissimos quam porro repellendus iste velit a aspernatur. Consequuntur odit ab neque reprehenderit sapiente amet perferendis.</p><br><br>
+                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Necessitatibus et ipsa repellat laborum, eligendi dignissimos quam porro repellendus iste velit a aspernatur. Consequuntur odit ab neque reprehenderit sapiente amet perferendis.</p><br><br>
+                        </div>
+                    </div>
+                    <!-- fin del tema -->      
+
+                </div>
+                <!-- fin de temas -->
+
+            </div>
+            <!-- fin arreglos -->
+
+
+            <!-- funciones -->
+            <div class="content" id="funciones">
+                <!-- temas -->
+                <div class="entrys">
+
+                    <!-- tema -->
+                    <div class="entry">
+                        <!-- titulo de entrada -->
+                        <div class="entry-title">
+                            <p>Funciones</p>
+                            <button type="button" class="entry-btn">
+                                <span class="icon">
+                                    <i class="fas fa-angle-right"></i>
+                                </span>
+                            </button>
+                        </div>
+                        <!-- texto de entrada -->
+                        <div class="entry-text">
+                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Necessitatibus et ipsa repellat laborum, eligendi dignissimos quam porro repellendus iste velit a aspernatur. Consequuntur odit ab neque reprehenderit sapiente amet perferendis.</p><br><br>
+                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Necessitatibus et ipsa repellat laborum, eligendi dignissimos quam porro repellendus iste velit a aspernatur. Consequuntur odit ab neque reprehenderit sapiente amet perferendis.</p><br><br>
+                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Necessitatibus et ipsa repellat laborum, eligendi dignissimos quam porro repellendus iste velit a aspernatur. Consequuntur odit ab neque reprehenderit sapiente amet perferendis.</p><br><br>
+                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Necessitatibus et ipsa repellat laborum, eligendi dignissimos quam porro repellendus iste velit a aspernatur. Consequuntur odit ab neque reprehenderit sapiente amet perferendis.</p><br><br>
+                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Necessitatibus et ipsa repellat laborum, eligendi dignissimos quam porro repellendus iste velit a aspernatur. Consequuntur odit ab neque reprehenderit sapiente amet perferendis.</p><br><br>
+                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Necessitatibus et ipsa repellat laborum, eligendi dignissimos quam porro repellendus iste velit a aspernatur. Consequuntur odit ab neque reprehenderit sapiente amet perferendis.</p><br><br>
+                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Necessitatibus et ipsa repellat laborum, eligendi dignissimos quam porro repellendus iste velit a aspernatur. Consequuntur odit ab neque reprehenderit sapiente amet perferendis.</p><br><br>
+                        </div>
+                    </div>
+                    <!-- fin del tema -->    
+                    <!-- tema -->
+                    <div class="entry">
+                        <!-- titulo de entrada -->
+                        <div class="entry-title">
+                            <p>Parametros</p>
+                            <button type="button" class="entry-btn">
+                                <span class="icon">
+                                    <i class="fas fa-angle-right"></i>
+                                </span>
+                            </button>
+                        </div>
+                        <!-- texto de entrada -->
+                        <div class="entry-text">
+                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Necessitatibus et ipsa repellat laborum, eligendi dignissimos quam porro repellendus iste velit a aspernatur. Consequuntur odit ab neque reprehenderit sapiente amet perferendis.</p><br><br>
+                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Necessitatibus et ipsa repellat laborum, eligendi dignissimos quam porro repellendus iste velit a aspernatur. Consequuntur odit ab neque reprehenderit sapiente amet perferendis.</p><br><br>
+                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Necessitatibus et ipsa repellat laborum, eligendi dignissimos quam porro repellendus iste velit a aspernatur. Consequuntur odit ab neque reprehenderit sapiente amet perferendis.</p><br><br>
+                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Necessitatibus et ipsa repellat laborum, eligendi dignissimos quam porro repellendus iste velit a aspernatur. Consequuntur odit ab neque reprehenderit sapiente amet perferendis.</p><br><br>
+                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Necessitatibus et ipsa repellat laborum, eligendi dignissimos quam porro repellendus iste velit a aspernatur. Consequuntur odit ab neque reprehenderit sapiente amet perferendis.</p><br><br>
+                        </div>
+                    </div>
+                    <!-- fin del tema -->    
+                    <!-- tema -->
+                    <div class="entry">
+                        <!-- titulo de entrada -->
+                        <div class="entry-title">
+                            <p>Lorem, ipsum dolor.</p>
+                            <button type="button" class="entry-btn">
+                                <span class="icon">
+                                    <i class="fas fa-angle-right"></i>
+                                </span>
+                            </button>
+                        </div>
+                        <!-- texto de entrada -->
+                        <div class="entry-text">
+                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Necessitatibus et ipsa repellat laborum, eligendi dignissimos quam porro repellendus iste velit a aspernatur. Consequuntur odit ab neque reprehenderit sapiente amet perferendis.</p><br><br>
+                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Necessitatibus et ipsa repellat laborum, eligendi dignissimos quam porro repellendus iste velit a aspernatur. Consequuntur odit ab neque reprehenderit sapiente amet perferendis.</p><br><br>
+                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Necessitatibus et ipsa repellat laborum, eligendi dignissimos quam porro repellendus iste velit a aspernatur. Consequuntur odit ab neque reprehenderit sapiente amet perferendis.</p><br><br>
+                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Necessitatibus et ipsa repellat laborum, eligendi dignissimos quam porro repellendus iste velit a aspernatur. Consequuntur odit ab neque reprehenderit sapiente amet perferendis.</p><br><br>
+                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Necessitatibus et ipsa repellat laborum, eligendi dignissimos quam porro repellendus iste velit a aspernatur. Consequuntur odit ab neque reprehenderit sapiente amet perferendis.</p><br><br>
+                        </div>
+                    </div>
+                    <!-- fin del tema -->                    
+
+                </div>
+                <!-- fin de temas -->
+
+
+            </div>
+            <!-- fin funciones -->
+
+        </div>
+    </div>
+
+    <div class="footer"></div>
+
+
+    <script src="./scripts/temario.js"></script>
 </body>
 </html>
