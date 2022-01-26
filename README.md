@@ -1,1 +1,1 @@
-## Repositorio para el proyecto de aplicaciones multimedia otoño 2020 fcc, buap
+## Repositorio para el proyecto concepthub
