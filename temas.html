@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Temas</title>
+  <link rel="stylesheet" href="src/temas.css">
+</head>
+<body>
+  
+  <!-- navegacion -->
+  <nav class="navbar">
+    <a class="logo" href="./index.html">concepthub</a>
+    <ul>
+      <li><a href="./index.html">Inicio</a></li>
+      <li><a href="./temas.html">Temas</a></li>      
+    </ul>
+</nav>
+
+<div class="instrucciones">
+  <p>
+    Los conceptos están agrupados y acomodados en bloques de manera que puedas ir aprendiéndolos de manera progresiva y en orden. Puedes acceder haciendo clic en las pestañas para desplegarlos. 
+  </p>
+  <img src="./assets/img/img1.png" alt="">
+</div>
+
+<div class="mycompiler">
+  <div>
+    <p>
+      Puedes probar los fragmentos de codigo muy facil
+    </p>    
+    <ul>
+      <li>
+        Da click en el boton que prefieras
+      </li>
+      <li>
+        Copia un fragmento de codigo
+      </li>
+      <li>
+        Pegalo en el editor que corresponda
+      </li>
+      <li>
+        Da click en el boton run
+      </li>
+    </ul>
+  </div>
+  <div class="enlaces">
+    <a href="https://www.mycompiler.io/new/nodejs" target="_blank" class="javascript">JavaScript</a>
+    <a href="https://www.mycompiler.io/new/php" target="_blank" class="php">PHP</a>
+    <a href="https://www.mycompiler.io/new/python" target="_blank" class="python">Python</a>
+    <a href="https://www.mycompiler.io/new/java" target="_blank" class="java">Java</a>
+  </div>
+</div>
+
+<!-- contenedor -->
+<div class="container">
+  <!-- pestañas -->
+  <div class="btn-container">
+      <button class="tab-btn active" data-id="fundamentos">Fundamentos</button>
+      <button class="tab-btn" data-id="control">Estructuras de control</button>
+      <button class="tab-btn" data-id="arreglos">Arreglos</button>
+      <button class="tab-btn" data-id="funciones">Funciones</button>
+  </div>      
+
+  <!-- contenido -->
+  <div class="sec-container">
+
+      <!-- fundamentos -->
+      <div class="content active" id="fundamentos">     
+          
+          <div class="entrys">
+
+              <div class="entry">
+                  <div class="entry-title">
+                      <p>Comentarios</p>
+                      <span class="icon"></span>
+                  </div>
+                  <div class="entry-body-c"></div>
+              </div>
+              <div class="entry">
+                <div class="entry-title">
+                    <p>Variables</p>
+                    <span class="icon"></span>
+                </div>
+                <div class="entry-body-c"></div>
+              </div>
+              <div class="entry">
+                <div class="entry-title">
+                    <p>Tipos de datos</p>
+                    <span class="icon"></span>
+                </div>
+                <div class="entry-body-c"></div>
+              </div>
+              <div class="entry">
+                <div class="entry-title">
+                    <p>Constantes</p>
+                    <span class="icon"></span>
+                </div>
+                <div class="entry-body-c"></div>
+              </div> 
+              <div class="entry">
+                <div class="entry-title">
+                    <p>Operadores aritméticos</p>
+                    <span class="icon"></span>
+                </div>
+                <div class="entry-body-c"></div>
+              </div> 
+              <div class="entry">
+                <div class="entry-title">
+                    <p>Operadores de asignación</p>
+                    <span class="icon"></span>
+                </div>
+                <div class="entry-body-c"></div>
+              </div> 
+              
+          </div>
+        
+      </div>
+
+      <!-- control -->
+      <div class="content" id="control">                
+          
+        <div class="entrys">
+
+          <div class="entry">
+              <div class="entry-title">
+                  <p>Operadores condicionales</p>
+                  <span class="icon"></span>
+              </div>
+              <div class="entry-body-c"></div>
+          </div>
+          <div class="entry">
+            <div class="entry-title">
+                <p>if</p>
+                <span class="icon"></span>
+            </div>
+            <div class="entry-body-c"></div>
+          </div>
+          <div class="entry">
+            <div class="entry-title">
+                <p>else</p>
+                <span class="icon"></span>
+            </div>
+            <div class="entry-body-c"></div>
+          </div>
+          <div class="entry">
+            <div class="entry-title">
+                <p>switch</p>
+                <span class="icon"></span>
+            </div>
+            <div class="entry-body-c"></div>
+          </div> 
+          <div class="entry">
+            <div class="entry-title">
+                <p>Operadores lógicos</p>
+                <span class="icon"></span>
+            </div>
+            <div class="entry-body-c"></div>
+          </div> 
+          <div class="entry">
+            <div class="entry-title">
+                <p>for</p>
+                <span class="icon"></span>
+            </div>
+            <div class="entry-body-c"></div>
+          </div> 
+          <div class="entry">
+            <div class="entry-title">
+                <p>while</p>
+                <span class="icon"></span>
+            </div>
+            <div class="entry-body-c"></div>
+          </div> 
+          <div class="entry">
+            <div class="entry-title">
+                <p>do while</p>
+                <span class="icon"></span>
+            </div>
+            <div class="entry-body-c"></div>
+          </div> 
+          
+        </div>
+      </div>      
+
+      <!-- arreglos -->
+      <div class="content" id="arreglos">
+
+        <div class="entrys">
+
+          <div class="entry">
+              <div class="entry-title">
+                  <p>Arreglos (array)</p>
+                  <span class="icon"></span>
+              </div>
+              <div class="entry-body-c"></div>
+          </div>
+          <div class="entry">
+            <div class="entry-title">
+                <p>Array asociativo</p>
+                <span class="icon"></span>
+            </div>
+            <div class="entry-body-c"></div>
+          </div>
+          <div class="entry">
+            <div class="entry-title">
+                <p>Arreglos anidados</p>
+                <span class="icon"></span>
+            </div>
+            <div class="entry-body-c"></div>
+          </div>
+          
+      </div>
+
+      </div>
+
+      <!-- funciones -->
+      <div class="content" id="funciones">
+        
+        <div class="entrys">
+
+          <div class="entry">
+              <div class="entry-title">
+                  <p>Funciones</p>
+                  <span class="icon"></span>
+              </div>
+              <div class="entry-body-c"></div>
+          </div>
+          <div class="entry">
+            <div class="entry-title">
+                <p>Parámetros</p>
+                <span class="icon"></span>
+            </div>
+            <div class="entry-body-c"></div>
+          </div>
+          <div class="entry">
+            <div class="entry-title">
+                <p>Retorno</p>
+                <span class="icon"></span>
+            </div>
+            <div class="entry-body-c"></div>
+          </div>
+          
+        </div>
+
+      </div>      
+
+  </div>
+</div>
+
+<script src="./src/app.js" type="module"></script>
+</body>
+</html>

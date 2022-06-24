@@ -1,24 +1,28 @@
 *{
-    margin: 0;
-    padding: 0;
     box-sizing: border-box;
-    font-family: 'Poppins', sans-serif;    
 }
 
+body{
+    font-family: Avenir, Helvetica, Arial, sans-serif;
+    font-size: large;
+    margin: 0;
+    padding: 0;
+    background: #f1f5f8;     
+}
 .navbar{
     width: 100%;
-    margin: auto;
-    padding: 15px 30px;
+    /* margin: auto;
+    padding: 15px 30px; */
     display: flex;
+    justify-content: space-evenly;
     position: sticky;
     top: 0;    
     align-items: center;
-    justify-content: space-between;
-    background: rgba(0, 0, 0, .8);
+    background: rgba(0, 0, 0, 0.75);
     z-index: 3;    
 }
 
-.sticky{
+.fixed{
     background: #000; 
     position: fixed;   
 }
@@ -54,26 +58,3 @@
 .navbar ul li:hover::after{
     width: 100%;
 } 
-
-
-/* content */
-
-.content{
-    width: 90%;
-    margin: auto;    
-}
-
-.seccion{
-    font-size: 1.5rem;
-    display: flex;    
-    padding: 50px 0;
-}
-
-.seccion img{
-    width: 50%;
-}
-
-.seccion p{
-    width: 40%;
-    margin: auto;
-}

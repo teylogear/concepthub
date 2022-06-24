@@ -1,11 +1,11 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <title>concepthub</title>
-    <link rel="stylesheet" href="./styles/index.css">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,600;1,300;1,400;1,600&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="./src/index.css">    
 
 </head>
 <body>
@@ -16,28 +16,30 @@
             <a class="logo" href="./index.html">concepthub</a>
             <ul>
                 <li><a href="./index.html">Inicio</a></li>
-                <li><a href="./temario.html">Temas</a></li>
-                <li><a href="./about.html">Acerca de</a></li>
+                <li><a href="./temas.html">Temas</a></li>       
             </ul>
         </nav>
-        <div class="content">
-            <p>Inicia en el mundo del desarrollo de software aprendiendo las bases de la programación de forma simple</p>
-            <div class="boton">
-                <a href="./temario.html">Empezar</a>
-            </div>
+        <div class="text">
+            <h1>
+                Los lenguajes de programación no son lo importante, los conceptos si
+            </h1>
+            <p>
+                Concepthub es una web donde los usuarios pueden aprender los conceptos basicos de la programación con ejemplos en diferentes lenguajes de programación para contrastar lo aprendido
+            </p>
+            <a class="btn" href="./temas.html">Empezar</a>
         </div>
     </div>
 
     
     <!-- seccion 2 -->
-    <div class="seccion2">
+    <div class="grid">
         <div class="text">
             <h3>Conceptos </h3>
             <p>Todos los lenguajes de programación hacen uso de estos conceptos, una vez que los tengas podrás aprender cualquier lenguaje de programación sin problemas.</p>
         </div>
         <div class="text">
-            <h3>Programación </h3>
-            <p>Para programar necesitas aprender un lenguaje de programación, este sitio web no se enfoca a ningún lenguaje de programación en específico, solo te proporciona los conceptos básicos.</p>
+            <h3>No es un curso</h3>
+            <p>La idea de este sitio no es ser un curso, es ayudar a comprender que los conceptos importan mas que los lenguajes de programación mostrando su implementación en algunos de ellos</p>
         </div>
         <div class="text">
             <h3>Ejemplos </h3>
@@ -51,18 +53,16 @@
 
     <!-- seccion 3 -->
     <div class="seccion3">
-        <div class="text">
-            <h3>¿Por que todos deberian aprender a programar?.</h3>
-            <a href="./temario.html">Empezar</a>
+        <div>
+            <h3>Todo empieza por algun lugar, aqui tu puedes empezar tambien</h3>
+            <a class="btn" href="./temas.html">Empezar</a>
         </div>
-        <div class="video">
-            <iframe  src="https://www.youtube.com/embed/X5Wkp1gsNik" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-        </div>
+        <img src="./assets/img/img3.png" alt="">        
     </div>
+
     <script type="text/javascript">
     window.addEventListener("scroll",function(){
-        var navbar = document.querySelector("nav");
-        navbar.classList.toggle("sticky", window.scrollY > 0);
+        document.querySelector("nav").classList.toggle("fixed", window.scrollY > 0)        
     })
     </script>
 </body>
