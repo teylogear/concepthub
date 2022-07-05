@@ -172,11 +172,12 @@ body{
   
 .content.active{
     display: block;
+    max-width: 100%;
 }
 
 
 .entrys{
-    width: 90%;
+    max-width: 90%;
     margin: auto;
     padding-top: 50px;
 }
@@ -217,7 +218,8 @@ body{
 
 .entry-body{
     margin: auto;
-    padding: 20px;    
+    max-width: 100%;
+    padding: 20px;        
     background-color: white;
 }
 
@@ -250,6 +252,7 @@ pre {
 }
 .show-body .entry-body {
     display: block;
+    max-width: 100vw;
 }
 
 .show-body .icon{    
